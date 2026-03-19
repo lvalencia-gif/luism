@@ -1,5 +1,6 @@
 import random
-print("Hi! Let's play a guess-the-number game.")
+
+print("Hi!")
 secret = random.randint(1, 20)
 
 while True:
