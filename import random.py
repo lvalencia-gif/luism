@@ -12,3 +12,7 @@ while True:
     else:
         print("You got it! 🎉")
         break
+
+print("Rolling a dice...")
+roll = random.randint(1, 6)
+print("You rolled:", roll)
