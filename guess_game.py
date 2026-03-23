@@ -46,11 +46,11 @@ def read_int(prompt: str, min_value: int, max_value: int) -> int:
 
 def play_game() -> None:
     print("Hi! Let's play a guess-the-number game.")
-    secret = random.randint(1, 20)
+    secret = random.randint(1, 1000)
 
     while True:
         try:
-            guess = read_int('Guess a number 1-20 (or q to quit): ', 1, 20)
+            guess = new_func()
         except KeyboardInterrupt:
             print('\nGame exited. Bye!')
             return
@@ -66,6 +66,10 @@ def play_game() -> None:
     print('\nRolling a dice...')
     roll = random.randint(1, 6)
     print('You rolled:', to_roman(roll))
+
+def new_func():
+    guess = read_int('Guess a number 1-1000 (or q to quit): ', 1, 1000)
+    return guess
 
 
 if __name__ == '__main__':
